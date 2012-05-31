@@ -1,7 +1,7 @@
 #include "array.h"
 
-#include <stdio.h>
-#include <string.h>
+//#include <stdio.h>
+//#include <string.h>
 #include "lua.h"
 #include "lauxlib.h"
 #include "lualib.h"
@@ -99,7 +99,7 @@ static const struct luaL_reg arraylib [] = {
 
 
 
-int luaopen_array (lua_State *L) {
+int luaopen_libarray (lua_State *L) {
   luaL_newmetatable(L, "LuaBook.array");
   luaL_openlib(L, "array", arraylib, 0);
 
